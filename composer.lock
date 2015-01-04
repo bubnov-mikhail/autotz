@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e5d0d4661fbd8627deaa41f78e92384d",
+    "hash": "969f0c2bc262162885e34b5a5a34b9a3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2309,6 +2309,73 @@
             "time": "2014-04-28 14:01:06"
         },
         {
+            "name": "seostats/seostats",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:chasen/SEOstats.git",
+                "reference": "a6e74896390509d95791d82da7b858446399508a"
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": ">=3.7,<4",
+                "scrutinizer/ocular": "~1",
+                "squizlabs/php_codesniffer": "~1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "SEOstats\\": ""
+                },
+                "classmap": [
+                    "SEOstats/Services/3rdparty"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephan Schmitz",
+                    "email": "eyecatchup@gmail.com",
+                    "homepage": "https://github.com/eyecatchup",
+                    "role": "Creator, Developer, Maintainer"
+                },
+                {
+                    "name": "SEOstats Community",
+                    "homepage": "https://github.com/eyecatchup/seostats/contributors",
+                    "role": "Contributor, Developer"
+                }
+            ],
+            "description": "SEOstats is a powerful open source PHP library to request a bunch of SEO relevant metrics for any website.",
+            "homepage": "http://github.com/eyecatchup/SEOstats",
+            "keywords": [
+                "Alexa",
+                "Backlinks",
+                "Google",
+                "Mozscape",
+                "Open Site Explorer",
+                "Pagerank",
+                "SEMRush",
+                "SEO",
+                "SEO-Stats",
+                "SEOStats",
+                "SEOmoz",
+                "Sistrix"
+            ],
+            "time": "2014-12-30 01:17:22"
+        },
+        {
             "name": "silex/silex",
             "version": "v1.0.2",
             "source": {
@@ -2844,7 +2911,8 @@
         "sensio/buzz-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
         "knplabs/knp-menu": 10,
-        "knplabs/knp-menu-bundle": 15
+        "knplabs/knp-menu-bundle": 15,
+        "seostats/seostats": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
