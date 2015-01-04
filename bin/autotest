@@ -1,9 +1,9 @@
 #!/bin/sh
 #load fixtures
-../app/console doctrine:fixtures:load --env=test -n > /dev/null 2>&1
+/var/www/autotz/current/app/console doctrine:fixtures:load --env=test -n > /dev/null 2>&1
 
 #run phpunit
-phpunit -c ../app/phpunit.autotest.config -v > /tmp/phpunit_output.log
+phpunit -c /var/www/autotz/current/app/phpunit.autotest.config -v > /tmp/phpunit_output.log
 PHPUNIT_TITLE="PHPUnit успех"
 PHPUNIT_BODY="Ошибки не обнаружены в проекте YOUR PROJECT"
 PHPUNIT_LOG="$(cat /tmp/phpunit_output.log)"
